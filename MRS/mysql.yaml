@@ -12,8 +12,8 @@
         - mysql-server
         - mysql-client
         - python3-mysqldb
-        - libmysqlclient-dev    
-        
+        - libmysqlclient-dev
+       become: yes
     - name: start and enable mysql service
       service:
          name: mysql
@@ -28,9 +28,9 @@
          host: '%'
          state: present
     
-    - name: creating nop DB
+    - name: creating openmrs DB
       mysql_db:
-         name: nopcommerce
+         name: openmrs
          state: present
     
     - name: Enable remote login to mysql
