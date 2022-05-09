@@ -49,6 +49,39 @@ sudo systemctl restart jenkins
 STEP:5 Jenkins UI webpage
 -----------------------------
 
+Jenkins default path : /var/lib/jenkins
+
+open url with public IP 
+
+<PublicIP:8080>
+
+password:
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
+Login and install suggested plugins
+
+Create Login credentials and start using Jenkins
+
+STEP:6 Adding Git jobs 
+--------------------------
+
+Go to new Item in jenkins and Goto source code managemnet.
+
+Add ssh keys for git 
+
+in my laptop cat id_rsa
+
+copy private Ip to jenkins credentials selection ssh with userkeys.
+
+
+Git clone <URL> and select the ssh key to clone directly from git hub.
+
+
+
+
+
+
 
 
 
