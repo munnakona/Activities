@@ -98,15 +98,19 @@ scp .\Spurtcommerce_3.0.2_community_LTS.zip ubuntu@54.227.189.101:/home/ubuntu/
 
  sudo unzip Spurtcommerce_3.0.2_community_LTS.zip
 
-sudo mv api /home/ubuntu/
 
-cd ..  and check api directory in home /ubuntu
+cd api
+
+sudo npm install
+
+sudo npm install bcrypt@5.0.1
 
 
- cd /etc/apache2/sites-available/
 
- sudo nano 000-default.conf
+
+
 
  
+
 
 
